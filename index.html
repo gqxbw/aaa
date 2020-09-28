@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+        <style>
+		ul{
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+		img{
+			border:0;
+			vertical-align:middle;
+			/*display: block*/
+		}
+		.box{
+			width:812px;
+			height:402px;
+			position:relative;
+			margin:0 auto;
+				border:10px solid red;
+				/* overflow: hidden*/
+		}
+		.imgs{
+			width:2000px;
+			height:402px;
+			position:absolute;
+			top:0;
+			left:-812px;
+		}
+		 .imgs li{
+		 	float:left;
+		 }
+		 .dots{
+		 	position:absolute;
+		 	left:331px;
+		 	bottom:30px;
+		 	height:30px;
+		 	width: 150px;
+		 	font-size:0;
+		 	background: rgba(225, 225, 225, .5);
+		 	border-radius:10px;
+		 }
+		 .dots span{
+		 	display:inline-block;
+		 	width:20px;
+		 	height:20px;
+		 	font-size:16px;
+		 	margin:5px;
+		 	border-radius:50%
+		 	background:#fff;
+		 }
+		 .dot .act{
+		 	background:red;
+		 }
+		 .arrows{
+		 	position:absolute;
+		 	background:rgba(255, 255, 255, 1.0);
+		 }
+        </style>
+    </head>
+    <body>
+    <div class="box">
+    	<ul class="imgs">
+    		<li><a href="#"><img src="D:/测试网页/imgs/1.jpg"></a></li>
+    		<li><a href="#"><img src="D:/测试网页/imgs/2.jpg"></a></li>
+    		<li><a href="#"><img src="D:/测试网页/imgs/3.jpg"></a></li>
+    		<li><a href="#"><img src="D:/测试网页/imgs/4.jpg"></a></li>
+    		<li><a href="#"><img src="D:/测试网页/imgs/5.jpg"></a></li>
+    	</ul>
+    	<div class="dots">
+    		<span></span>
+    		<span class="act"></span>
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    	</div>
+    	<div class="arrows">
+    		<span class="prev">&lt;</span>
+    		<span class="next">&gt;</span>
+    	</div>
+    </div>
+    </body>
+</html>
